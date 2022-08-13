@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+
+
+}
+
+.headlineBox {
+    box-shadow: 0px 30px 100px -20px lightskyblue inset;
+    padding: 2px;
+}
+
+.headlineBox h1 {
+    font-size: 64px;
+    text-align: center;
+}
+
+#mainBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fotoForm img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 12px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    cursor: pointer;
+}
+
+.popUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.closeIcon {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+    box-shadow: 0px 30px 100px -20px lightskyblue inset;
+    border-radius: 50px;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 225ms ease-in-out;
+}
+
+.dNone {
+    display: none;
+}
+
+.mainImage {
+    width: 100%;
+    height: 70vh;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.arrowLeft {
+    margin-right: 16px;
+    box-shadow: 0px 30px 100px -20px lightskyblue inset;
+    border-radius: 50px;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 225ms ease-in-out;
+}
+
+.arrowRight {
+    margin-left: 16px;
+    box-shadow: 0px 30px 100px -20px lightskyblue inset;
+    border-radius: 50px;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 225ms ease-in-out;
+}
+
+.arrowLeft:hover,
+.arrowRight:hover,
+.closeIcon:hover {
+    background-color: rgb(163, 210, 229);
+    transition: all 225ms ease-in-out;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Responsive */
+@media (max-width: 767px) {
+    .fotoForm img {
+        width: 350px;
+    }
+
+    .mainImage {
+        width: 57%;
+        height: 70vh;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 375px) and (max-width:375px) {
+    .mainImage {
+        width: 53%;
+        height: 70vh;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 390px) and (max-width:390px) {
+    .mainImage {
+        width: 54.5%;
+        height: 70vh;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 393px) and (max-width:393px) {
+    .mainImage {
+        width: 55%;
+        height: 70vh;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 360px) and (max-width:360px) {
+    .fotoForm img {
+        width: 325px;
+    }
+
+    .mainImage {
+        width: 51%;
+        height: 70vh;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    .mainImage {
+        width: 78.5%;
+        height: 70vh;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:768px) {
+    .mainImage {
+        width: 77%;
+        height: 70vh;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 912px) and (max-width: 912px) {
+    .mainImage {
+        width: 80.5%;
+        height: 70vh;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        margin-bottom: 200px;
+    }
+}
+
+
+@media (min-width: 540px) and (max-width: 540px) {
+    .mainImage {
+        width: 67%;
+        height: 70vh;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 280px) {
+    .mainImage {
+        width: 37%;
+        height: 70vh;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    .fotoForm img {
+        width: 250px;
+    }
+
+    .headlineBox h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+    .mainImage {
+        width: 37%;
+        height: 70vh;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    .fotoForm img {
+        width: 250px;
+    }
+
+    .headlineBox h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1280px) {
+    .mainImage {
+        width: 72%;
+        height: 70vh;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    .fotoForm img {
+        width: 250px;
+    }
+
+    .headlineBox h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+}
+
+@media (orientation: landscape) {
+    .mainImage {
+        width: 100%;
+        height: 70vh;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+}
+
+
+@media (min-width: 896px) and (max-width:896px) {
+    .flex {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 915px) and (max-width: 915px) {
+    .flex {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 844px) and (max-width: 851px) {
+    .flex {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 1180px) and (max-width: 1180px) {
+    .flex {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .mainImage {
+        width: 85%;
+        height: 70vh;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+    .flex {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .mainImage {
+        width: 82.5%;
+        height: 70vh;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 720px) {
+
+    .mainImage {
+        width: 75.5%;
+        height: 70vh;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 914px) and (max-width: 914px) {
+
+    .flex {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+}
